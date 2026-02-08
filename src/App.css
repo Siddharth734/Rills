@@ -92,6 +92,13 @@ html, body {
   justify-content: space-around;
   overflow: hidden;
 }
+#root main section .all-reels .reel .right .like .like-icon .liked {
+  background: url(https://media.istockphoto.com/id/1403057774/vector/gradient-background-orange-pink-and-purple-colors-rainbow-colors-magenta-yellow-and-red.jpg?s=612x612&w=0&k=20&c=vjBJxXPU7QXTUgGcMYVq-4xp7W7ns4wkjf42pDVK2K0=);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 #root main section .all-reels .reel .right i {
   font-weight: 100;
   font-size: 1.8rem;

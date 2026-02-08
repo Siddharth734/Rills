@@ -2,12 +2,13 @@ import { useState } from "react";
 import reelsData from "../data/reelsdata";
 
 export default function AllReels() {
+    const [isLiked, setIsLiked] = useState(false);
     
     return (
         <div className="all-reels">
             {
                 reelsData.map(reel => 
-                <div className="reel" key={reel.id}>
+                <div className="reel" key={reel.id} onDoubleClick={() => {setIsLiked(!isLiked)}}>
                         {/* <img className="main-img" src={reel.mainImg} alt="" /> */}
                         <video autoPlay loop muted playsInline src={reel.video}></video>
                         <div className="bottom">
@@ -21,7 +22,8 @@ export default function AllReels() {
                         <div className="right">
                             <div className="like">
                                 <h4 className="like-icon">
-                                    <i className="ri-poker-hearts-line"></i>
+                                    <i className={isLiked?"ri-heart-3-fill liked":"ri-poker-hearts-line"}
+                                    onClick={() => {setIsLiked(!isLiked)}}></i>
                                 </h4>
                                 <h6>{reel.stats.likes}</h6>
                             </div>
