@@ -30,8 +30,8 @@ export default function AllReels() {
             {
                 reelsData.map(reel => 
                 <div className="reel" key={reel.id} onDoubleClick={() => {HeartMotion(reel.id)}}>
-                        <img className="main-img" src={reel.mainImg} alt="" />
-                        {/* <video autoPlay loop muted playsInline src={reel.video}></video> */}
+                        {/* <img className="main-img" src={reel.mainImg} alt="" /> */}
+                        <video autoPlay loop muted playsInline src={reel.video}></video>
                         <div className="bottom">
                             <div className="user">
                                 <img className="user-img" src={reel.user.userImg} alt="" />
