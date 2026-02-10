@@ -21,7 +21,6 @@ html, body {
 #root main section {
   height: 100%;
   width: 25rem;
-  background-color: black;
   margin: auto;
 }
 #root main section .all-reels {
@@ -35,7 +34,6 @@ html, body {
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: aqua;
   overflow: hidden;
   corner-shape: squircle;
   border-radius: 1rem;
@@ -107,6 +105,20 @@ html, body {
 #root main section .all-reels .reel .right h6 {
   font-weight: 500;
   font-size: 0.8rem;
+}
+#root main section .all-reels .reel .heart i {
+  position: absolute;
+  top: 50%;
+  font-size: 10rem;
+  left: 50%;
+  background: url(https://media.istockphoto.com/id/1403057774/vector/gradient-background-orange-pink-and-purple-colors-rainbow-colors-magenta-yellow-and-red.jpg?s=612x612&w=0&k=20&c=vjBJxXPU7QXTUgGcMYVq-4xp7W7ns4wkjf42pDVK2K0=);
+  background-clip: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0) rotate(-60deg);
+  transition: all 0.4s;
 }
 #root main .all-reels::-webkit-scrollbar {
   display: none;
